@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I LOVE QBEE👑🐝❤️</title>
+
+    <style>
+      
+
+ .contact{
+ display: flex;
+ width: 100%;
+ justify-content: start;
+ }
+
+ .contact-link{
+/* 
+ border: solid rgb(255, 192, 215);
+ box-shadow: 0px 10px 25px rgba(233, 75, 135, 0.25);*/
+ }
+
+ .back-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border: solid rgb(255, 192, 215);
+  margin-top: 2rem;
+  margin-left: 0.7rem;
+  padding: 0.7rem;
+  border-radius: 50vh;
+  box-shadow: 0px 10px 25px rgba(233, 75, 135, 0.25);
+  color: #D6336C;
+ }
+ 
+
+ .gallery {
+  --d: 50s; /* updated duration */
+  display: grid;
+  place-items: center;
+  width: 220px;
+  margin-left: 220px;
+ }
+
+.gallery > img {
+  grid-area: 1/1;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 10px solid #f2f2f2;
+  box-shadow: 0 0 4px #0007;
+  z-index: 2;
+  animation: slide var(--d) infinite, z-order var(--d) infinite steps(1);
+}
+
+.gallery img:last-child {
+  animation-name: slide, z-order-last;
+}
+
+/* 20 IMAGE TIMING */
+
+.gallery > img:nth-child(1)  
+{ animation-delay: calc(0*var(--d)); --r: 16deg; }
+
+.gallery > img:nth-child(2)  
+{ animation-delay: calc(-0.05*var(--d)); --r: -1deg; }
+
+.gallery > img:nth-child(3)  
+{ animation-delay: calc(-0.10*var(--d)); --r: -19deg; }
+
+.gallery > img:nth-child(4)  
+{ animation-delay: calc(-0.15*var(--d)); --r: 6deg; }
+
+.gallery > img:nth-child(5)  
+{ animation-delay: calc(-0.20*var(--d)); --r: -8deg; }
+
+.gallery > img:nth-child(6)  
+{ animation-delay: calc(-0.25*var(--d)); --r: 12deg; }
+
+.gallery > img:nth-child(7)  
+{ animation-delay: calc(-0.30*var(--d)); --r: -14deg; }
+
+.gallery > img:nth-child(8)  
+{ animation-delay: calc(-0.35*var(--d)); --r: 4deg; }
+
+.gallery > img:nth-child(9)  
+{ animation-delay: calc(-0.40*var(--d)); --r: -22deg; }
+
+.gallery > img:nth-child(10) 
+{ animation-delay: calc(-0.45*var(--d)); --r: 9deg; }
+
+.gallery > img:nth-child(11) 
+{ animation-delay: calc(-0.50*var(--d)); --r: -6deg; }
+
+.gallery > img:nth-child(12) 
+{ animation-delay: calc(-0.55*var(--d)); --r: 18deg; }
+
+.gallery > img:nth-child(13) 
+{ animation-delay: calc(-0.60*var(--d)); --r: -11deg; }
+
+.gallery > img:nth-child(14) 
+{ animation-delay: calc(-0.65*var(--d)); --r: 7deg; }
+
+.gallery > img:nth-child(15) 
+{ animation-delay: calc(-0.70*var(--d)); --r: -17deg; }
+
+.gallery > img:nth-child(16) 
+{ animation-delay: calc(-0.75*var(--d)); --r: 3deg; }
+
+.gallery > img:nth-child(17) 
+{ animation-delay: calc(-0.80*var(--d)); --r: -9deg; }
+
+.gallery > img:nth-child(18) 
+{ animation-delay: calc(-0.85*var(--d)); --r: 15deg; }
+
+.gallery > img:nth-child(19) 
+{ animation-delay: calc(-0.90*var(--d)); --r: -4deg; }
+
+.gallery > img:nth-child(20) 
+{ animation-delay: calc(-0.95*var(--d)); --r: 20deg; }
+
+@keyframes slide {
+  10% {
+    transform: translateX(120%) rotate(var(--r));
+  }
+  0%, 100%, 20% {
+    transform: translateX(0%) rotate(var(--r));
+  }
+}
+
+@keyframes z-order {
+  10%, 20% {
+    z-index: 1;
+  }
+  80% {
+    z-index: 2;
+  }
+}
+
+@keyframes z-order-last {
+  10%, 20% {
+    z-index: 1;
+  }
+  90% {
+    z-index: 2;
+  }
+}
+
+main {
+  margin: 0;
+  min-height: 70vh;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+}
+
+#hedlinecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+#shine {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgba(255, 0, 102, 0.3);
+  z-index: 10;
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+  -webkit-background-size: 150px;
+  -webkit-background-clip: text;
+  -webkit-animation-name: shine;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  text-shadow: 0 0px 0px rgba(233, 85, 189, 0.419);
+}
+
+@-webkit-keyframes shine {
+  0%, 10% { background-position: -1000px; }
+  20% { background-position: top left; }
+  90% { background-position: top right; }
+  100% { background-position: 1000px; }
+}
+
+@media only screen and (max-width: 600px) {
+  #shine {
+    font-size: 22px;
+  }
+
+  #hedlinecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .gallery {
+    --d: 50s;
+    display: grid;
+    place-items: center;
+    width: 150px;
+    margin-left: 60px;
+  }
+}
+
+.gall{
+ padding: 0.4rem;
+ border: solid rgb(255, 192, 215);
+ border-radius: 50vh;
+ background-color: #FFFFFF;
+ box-shadow: 0px 10px 25px rgba(233, 75, 135, 0.25);
+ padding: 0.8rem;
+ text-align: center;
+ }
+
+
+.button{
+  display: flex;
+  justify-content: center;
+  text-align: center;;
+}
+
+.begin-our-story{
+  text-decoration: none;
+  color: #D6336C;
+}
+    
+</style>
+</head>
+<body id="blue">
+  
+  <audio autoplay loop muted id="bg-music">
+   <source src="./Val Gift gallery/music/The Fate Of Ophelia By Taylor Swift.mp3" type="audio/mpeg">
+  </audio>
+  
+  <script>
+   const music = document.getElementById("bg-music");
+
+    window.addEventListener("click", () => {
+    music.muted = false;
+    music.play();
+    }, { once: true });
+  </script>
+
+ <nav class="contact">
+  <a class="back-btn" href="./index.html">
+   <svg class="arrow" width="auto" height="1rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M20 12H4M4 12L10 18M4 12L10 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+   </svg> back 
+  </a>
+ </nav>
+    <main>
+       
+        <div id="hedlinecontainer">
+            <div id="shine">HAPPY VALENTINE'S DAY 💞</div>
+        </div>
+
+        <div class="gallery">
+          <img src="./Val Gift gallery/images/1.jpeg" alt="">
+          <img src="./Val Gift gallery/images/2.jpeg" alt="">
+          <img src="./Val Gift gallery/images/3.jpeg" alt="">
+          <img src="./Val Gift gallery/image2/4.jpeg" alt="">
+          <img src="./Val Gift gallery/image2/5.jpeg" alt="">
+          <img src="./Val Gift gallery/image2/6.jpeg" alt="">
+          <img src="./Val Gift gallery/images/7.jpeg" alt="">
+          <img src="./Val Gift gallery/images/8.jpeg" alt="">
+          <img src="./Val Gift gallery/images/9.jpeg" alt="">
+          <img src="./Val Gift gallery/images/10.jpeg" alt="">
+          <img src="./Val Gift gallery/images/11.jpeg" alt="">
+          <img src="./Val Gift gallery/images/12.jpeg" alt="">
+          <img src="./Val Gift gallery/images/13.jpeg" alt="">
+          <img src="./Val Gift gallery/images/14.jpeg" alt="">
+          <img src="./Val Gift gallery/image2/15.jpeg" alt="">
+          <img src="./Val Gift gallery/images/16.jpeg" alt="">
+          <img src="./Val Gift gallery/images/17.jpeg" alt="">
+          <img src="./Val Gift gallery/images/18.jpeg" alt="">
+          <img src="./Val Gift gallery/images/19.jpeg" alt="">
+          <img src="./Val Gift gallery/images/20.jpeg" alt="">
+        </div>
+    </main>
+
+    <div class="button">
+     <button class="gall"> <a class="begin-our-story" href="https://wa.me/message/VF7DPD7JCR5KL1">Touch My Nipple 🌚</a> </button>
+    </div>
+</body>
+</html>
